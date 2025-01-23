@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0.5em 0;
+            animation: fadeIn 3s;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 2em;
+            animation: fadeIn 4s;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            color: #ff9a9e;
+            background-color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: bounce 3s infinite;
+        }
+
+        .button:hover {
+            background-color: #ffe5e5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Te Amo ❤️</h1>
+    <p>Mi amor por ti es más grande que las palabras pueden expresar. Gracias por ser tú.</p>
+    <button class="button" onclick="mostrarMensaje()">Haz clic para saber más</button>
+
+    <script>
+        function mostrarMensaje() {
+            alert("Eres lo mejor que me ha pasado. Te amo más cada día. ❤️");
+        }
+    </script>
+</body>
+</html>
